@@ -205,7 +205,7 @@ Figure: The first column of images represents the **input image**, the second co
 
 Figure: The first row represents the **input images**, the second row represents the **ground truth**, the third row represents the **enhanced images from Retinex-Net with L1 loss**, and the last row represents the **enhanced images from Retinex-Net with Perceptual loss**.
 
-![Qualitative Comparison](qualitative_comparison.png)
+![Qualitative Comparison](qualitative_Our_Methodology.png.png)
 
 ---
 
