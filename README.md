@@ -125,6 +125,7 @@ In this project, we utilize a **VGG16-based perceptual loss function** inside a 
   - **Reconstruction Loss**: Measures the difference between the predicted and target image features. This is calculated using **L2 loss** on the features at various layers.
   - **Perceptual Loss**: The main goal of the perceptual loss is to align the high-level features between the enhanced image and the normal-light reference image, ensuring that the perceptual quality is improved.
   - **Total Loss**: The total loss function combines multiple loss terms, including perceptual, reconstruction, and regularization losses, to optimize the model during training.
+![Methodology](Methodology.png)  
 
 #### **5️⃣ Training**
 - These losses are backpropagated to optimize the **illumination enhancement** and **reflectance preservation**. The **perceptual loss** ensures that the enhanced image looks visually similar to the target image, improving subjective image quality.
