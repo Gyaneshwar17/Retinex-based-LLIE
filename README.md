@@ -1,4 +1,4 @@
-# **Retinex-Guided Diffusion-Based Low-Light Image Enhancement**
+give all the code # **Retinex-Guided Diffusion-Based Low-Light Image Enhancement**
 
 ## **Overview**
 This repository focuses on **low-light image enhancement (LLIE)** using **Retinex theory** and advanced methods like **diffusion models**. The project includes a comprehensive survey of LLIE algorithms and implementation of the **Retinex-Net** model with perceptual loss to improve image quality under low-light conditions.
@@ -163,25 +163,25 @@ To assess the performance of our proposed low-light image enhancement methods, w
 ---
 ## **Experimental Results**
 
-### **4.3.1 Retinex-Net**
+### **Retinex-Net**
 
-Figure 4.3: The first column of images represents the **input image**, the second column represents the **illumination map**, the third column represents the **ground truth**, and the fourth column represents the **reflectance map**.
+Figure: The first column of images represents the **input image**, the second column represents the **illumination map**, the third column represents the **ground truth**, and the fourth column represents the **reflectance map**.
 
  ![Retinex-Net Results](retinex_net_results.png)
 
 ---
 
-### **4.3.2 URetinex-Net**
+### **URetinex-Net**
 
-Figure 4.4: The first column of images represents the **input image**, the second column represents the **illumination map**, the third column represents the **ground truth**, and the fourth column represents the **reflectance map**.
+Figure: The first column of images represents the **input image**, the second column represents the **illumination map**, the third column represents the **ground truth**, and the fourth column represents the **reflectance map**.
 
 ![URetinex-Net Results](uretinex_net_results.png)
 
 ---
 
-### **4.3.3 PairLIE**
+### **PairLIE**
 
-Figure 4.5: The first column of images represents the **input image**, the second column represents the **illumination map**, the third column represents the **ground truth**, and the fourth column represents the **reflectance map**.
+Figure: The first column of images represents the **input image**, the second column represents the **illumination map**, the third column represents the **ground truth**, and the fourth column represents the **reflectance map**.
 
 ![PairLIE Results](pairlie_results.png)
 
@@ -203,15 +203,15 @@ Figure 4.5: The first column of images represents the **input image**, the secon
 
 ![Our Methodology Comparison](qualitative_Our_Methodology.png.png)
 
-Figure 4.6: The first row represents the **input images**, the second row represents the **ground truth**, the third row represents the **enhanced images from Retinex-Net with L1 loss**, and the last row represents the **enhanced images from Retinex-Net with Perceptual loss**.
+Figure: The first row represents the **input images**, the second row represents the **ground truth**, the third row represents the **enhanced images from Retinex-Net with L1 loss**, and the last row represents the **enhanced images from Retinex-Net with Perceptual loss**.
 
 ![Qualitative Comparison](qualitative_comparison.png)
 
 ---
 
-## **Chapter 5: Conclusions and Future Scope**
+## **Conclusions and Future Scope**
 
-### **5.1 Conclusion**
+### **Conclusion**
 
 In this work, we have successfully constructed and compared three different **Retinex-based algorithms** for decomposing images into their illumination and reflectance components. The chosen algorithms were put through a thorough testing process, in which loss functions were changed to assess how well they improved low-light photographs. 
 
