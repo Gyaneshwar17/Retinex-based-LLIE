@@ -186,10 +186,10 @@ Figure 4.5: The first column of images represents the **input image**, the secon
 
 ### **4.3.4 Qualitative Comparison**
 
-![Retinex](qualitative_Retinex.png)
-![qualitative_Uretinex Comparison](qualitative_Uretinex.png)
-![PairLie Comparison](qualitative_PairLIE.png)
-![Our Methodology Comparison](qualitative_Our_Methodology.png)
+![Retinex](qualitative_Retinex.png.png)
+![qualitative_Uretinex Comparison](qualitative_Uretinex.png.png)
+![PairLie Comparison](qualitative_PairLIE.png.png)
+![Our Methodology Comparison](qualitative_Our_Methodology.png.png)
 
 Figure 4.6: The first row represents the **input images**, the second row represents the **ground truth**, the third row represents the **enhanced images from Retinex-Net with L1 loss**, and the last row represents the **enhanced images from Retinex-Net with Perceptual loss**.
 
