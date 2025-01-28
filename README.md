@@ -142,48 +142,15 @@ While we have explored advanced techniques like diffusion models, the primary fo
 - Comparative analysis of **PSNR** and **SSIM** values with state-of-the-art methods.
 ### **Performance Evaluation Metrics**
 
-To evaluate the performance of the proposed **low-light image enhancement** architecture, we use two popular metrics to assess image quality: **Peak Signal-to-Noise Ratio (PSNR)** and **Structural Similarity Index Measure (SSIM)**. These metrics help quantify how well the enhanced image matches the ground truth in terms of both visual quality and structural preservation.
+To assess the performance of our proposed low-light image enhancement methods, we use two widely accepted metrics: **Peak Signal-to-Noise Ratio (PSNR)** and **Structural Similarity Index Measure (SSIM)**. These metrics help evaluate the quality of the enhanced images by comparing them with the ground truth images.
 
 #### **1️⃣ Peak Signal-to-Noise Ratio (PSNR)**
-PSNR is a widely used metric that compares the similarity between an original image and a processed image. It is defined as the ratio between the **maximum possible signal strength** and the amount of **corrupting noise** in the image. Higher PSNR values indicate better image quality.
 
-The formula for PSNR is:
-
-\[
-PSNR = 10 \cdot \log_{10}\left(\frac{MAX^2}{MSE}\right)
-\]
-
-Where:
-- **MAX** is the maximum possible pixel value of the image.
-- **MSE (Mean Squared Error)** is the average of the squared pixel errors between the original and reconstructed images.
-
-The **MSE** can be computed as:
-
-\[
-MSE = \frac{1}{N \cdot M} \sum_{i=1}^{N} \sum_{j=1}^{M} \left[ I(i,j) - K(i,j) \right]^2
-\]
-
-Where:
-- **I(i,j)** and **K(i,j)** represent the pixel values of the original image and the processed image respectively.
-- **N** and **M** are the dimensions of the image.
+**PSNR** is a traditional metric used to measure the quality of images by comparing the pixel-level differences between the original and the processed images. It quantifies the ratio of the maximum possible signal (pixel value range) to the noise introduced during image reconstruction. Higher PSNR values generally indicate better image quality, as they suggest less distortion between the original and enhanced images. However, PSNR does not always correlate with human visual perception, making it less reliable for evaluating perceptual image quality.
 
 #### **2️⃣ Structural Similarity Index Measure (SSIM)**
-The SSIM is a comprehensive metric that evaluates the perceived quality of an image. Unlike PSNR, which focuses solely on pixel-wise error, SSIM takes into account the **structural information** in the image, such as luminance, contrast, and texture. SSIM is considered a better metric for assessing perceived image quality.
 
-The SSIM formula is as follows:
-
-\[
-SSIM(x, y) = \frac{(2\mu_x \mu_y + C_1)(2\sigma_{xy} + C_2)}{(\mu_x^2 + \mu_y^2 + C_1)(\sigma_x^2 + \sigma_y^2 + C_2)}
-\]
-
-Where:
-- **x** and **y** are the input images being compared.
-- **μx**, **μy** are the means of the images **x** and **y**.
-- **σx**, **σy** are the standard deviations of **x** and **y**.
-- **σxy** is the covariance of **x** and **y**.
-- **C1** and **C2** are constants to avoid instability when the denominator approaches zero.
-
-SSIM produces a value between **-1 and 1**, where a higher value indicates better similarity to the reference image.
+**SSIM** is a more perceptually accurate metric than PSNR, as it takes into account the structural information of the image, including luminance, contrast, and texture. Unlike PSNR, which only considers pixel-wise differences, SSIM evaluates the similarity between the two images based on human visual perception. SSIM values range from **-1 to 1**, where a value closer to 1 indicates better similarity and higher quality. SSIM is widely regarded as a better indicator of image quality because it aligns more closely with human visual judgment.
 
 ---
 
