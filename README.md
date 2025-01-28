@@ -125,6 +125,7 @@ In this project, we utilize a **VGG16-based perceptual loss function** inside a 
   - **Reconstruction Loss**: Measures the difference between the predicted and target image features. This is calculated using **L2 loss** on the features at various layers.
   - **Perceptual Loss**: The main goal of the perceptual loss is to align the high-level features between the enhanced image and the normal-light reference image, ensuring that the perceptual quality is improved.
   - **Total Loss**: The total loss function combines multiple loss terms, including perceptual, reconstruction, and regularization losses, to optimize the model during training.
+
 ![Methodology](Methodology.png)  
 
 #### **5️⃣ Training**
@@ -166,7 +167,7 @@ To assess the performance of our proposed low-light image enhancement methods, w
 
 Figure 4.3: The first column of images represents the **input image**, the second column represents the **illumination map**, the third column represents the **ground truth**, and the fourth column represents the **reflectance map**.
 
-![Retinex-Net Results](retinex_net_results.png)
+ ![Retinex-Net Results](retinex_net_results.png)
 
 ---
 
@@ -185,13 +186,21 @@ Figure 4.5: The first column of images represents the **input image**, the secon
 ![PairLIE Results](pairlie_results.png)
 
 ### **4.3.4 Qualitative Comparison**
-**Analysis of RetinexNet**
+
+**Analysis of RetinexNet:** 
+
 ![Retinex](qualitative_Retinex.png.png)
-**Analysis of URetinexNet**
+
+**Analysis of URetinexNet:**
+
 ![qualitative_Uretinex Comparison](qualitative_Uretinex.png.png)
-**Analysis of PairLIE**
+
+**Analysis of PairLIE:**
+
 ![PairLie Comparison](qualitative_PairLIE.png.png)
-**Analysis of Proposed Method**
+
+**Analysis of Proposed Method:**
+
 ![Our Methodology Comparison](qualitative_Our_Methodology.png.png)
 
 Figure 4.6: The first row represents the **input images**, the second row represents the **ground truth**, the third row represents the **enhanced images from Retinex-Net with L1 loss**, and the last row represents the **enhanced images from Retinex-Net with Perceptual loss**.
